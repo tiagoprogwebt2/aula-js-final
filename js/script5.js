@@ -34,6 +34,11 @@ subtitulo.style.backgroundColor = "rgba(202, 0, 0, 0.5)";
 descricaoDom.classList.add("destaque");
 
 
+/* Manipulação de Eventos */
+const pagina = document.querySelector("body");
+const exemplo1 = document.querySelector("#exemplo1");
+const mensagem = document.querySelector("#mensagem");
+
 
 
 

@@ -39,6 +39,28 @@ const pagina = document.querySelector("body");
 const exemplo1 = document.querySelector("#exemplo1");
 const mensagem = document.querySelector("#mensagem");
 
+/* Ouvinte de Evento
+Usamos o Event Listener para monitorar a ocorrência
+de algum evento (no caso, click) e, a partir da ocorrência,
+executar ações na função callback. */
+exemplo1.addEventListener("click", function(){
+    pagina.style.fontFamily = "Verdana";
+    mensagem.innerHTML = "<i>Fonte alterada com sucesso!</i> 😜";
+    titulo.setAttribute("hidden", true);
+});
+
+/* Ouvinte de evento para teclado */
+document.addEventListener("keydown", function(event){
+    // Verificando se uma determinada tecla foi pressionada
+    if(event.code === "KeyR"){
+        pagina.style.fontFamily = "Times";
+        mensagem.innerHTML = "";   
+        titulo.removeAttribute("hidden");
+    }
+});
+
+
+
 
 
 

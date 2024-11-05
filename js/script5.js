@@ -60,7 +60,16 @@ document.addEventListener("keydown", function(event){
 });
 
 
+/* Exemplo 2: modo noturno */
+const botao = document.querySelector("#exemplo2");
+botao.addEventListener("click", function(){
+    pagina.classList.toggle("modo-noturno");
 
-
+    /* Programe AQUI uma condicional
+    que verifique se a classe "modo-noturno" está
+    aplicada à página, e se estiver, o texto do
+    botão deverá mudar para "Desativar". Caso contrário,
+    deverá mostrar "Ativar". */
+});
 
 

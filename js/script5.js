@@ -65,11 +65,17 @@ const botao = document.querySelector("#exemplo2");
 botao.addEventListener("click", function(){
     pagina.classList.toggle("modo-noturno");
 
-    /* Programe AQUI uma condicional
-    que verifique se a classe "modo-noturno" está
-    aplicada à página, e se estiver, o texto do
-    botão deverá mudar para "Desativar". Caso contrário,
-    deverá mostrar "Ativar". */
+    /* Programe AQUI uma condicional que verifique se a classe "modo-noturno" está aplicada à página, e se estiver, o texto do botão deverá mudar para "Desativar". Caso contrário, deverá mostrar "Ativar". */
+
+    // Solução 1: usando classList.contains
+    // if( pagina.classList.contains("modo-noturno") ){
+    
+    // Solução 2: usando className
+    if(pagina.className == "modo-noturno"){ 
+        botao.innerHTML = "Desativar";
+    } else {
+        botao.innerHTML = "Ativar";
+    }
 });
 
 
